@@ -1,0 +1,17 @@
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="CustomWidget.js"></script>
+<body>
+	<div id="aa" style="text-align: center;"></div>
+</body>
+<script type="text/javascript">
+	var textStyle = "color: red;font-size:25px;";
+	var listStyle = "font-size:30px; ";
+	var itemStyle = "    background-color: lightblue;border-radius: 50px;font-size: 25px;";
+	var citiesList = [
+	{"city": "Miami", "state": "FL", "full": "Miami, FL", "links": [{"station": "99 Jamz", "link": "https://ctt.ec/7c9c6"}, {"station": "103.5 The Beat", "link": "https://ctt.ec/6QBL2"}]},
+	{"city": "TO", "state": "KYOi", "full": "TOKYOi, JP", "links": [{"station": "99 Jamz", "link": "https://ctt.ec/7c9c6"}, {"station": "103.5 The Beat", "link": "https://ctt.ec/6QBL2"}]},
+	];
+	var insertDiv = "aa";;
+	const customW = new CustomWidget( insertDiv, textStyle, listStyle, citiesList, itemStyle);
+</script>
+
